@@ -1,0 +1,2243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GreenBasket - Shop</title>
+
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- Home Page CSS -->
+     <!-- <link rel="stylesheet" href="theme.css"> -->
+    <link rel="stylesheet" href="style.css">
+   
+
+    <!-- Shop Page CSS -->
+    <link rel="stylesheet" href="shop.css">
+<link rel="stylesheet" href="footer.css">
+<!-- <script src="js/theme.js"></script> -->
+<!-- <script src="js/shop.js"></script> -->
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SAME HOME PAGE NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg bg-white">
+
+    <div class="container-fluid px-lg-5">
+
+        <!-- Logo -->
+
+        <a class="navbar-brand logo" href="index.html">
+
+            <div class="logo-icon">
+                <i class="bi bi-basket2-fill"></i>
+            </div>
+
+            <div>
+
+                <span>
+                    Green<span class="logo-green">Basket</span>
+                </span>
+
+                <small>
+                    Fresh & Healthy
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- Mobile Toggle -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Navbar Content -->
+
+        <div
+            class="collapse navbar-collapse"
+            id="mainNavbar">
+
+
+            <!-- Links -->
+
+            <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        href="shop.html">
+
+                        Shop
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="cart.html">
+
+                        Cart
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="checkout.html">
+
+                        Checkout
+
+                    </a>
+
+                </li>
+                
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="about.html">
+
+                        About Us
+
+                    </a>
+
+                </li>
+                
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="contact.html">
+
+                        Contact Us
+
+                    </a>
+
+                </li>
+
+
+
+            </ul>
+
+
+            <!-- Right Side -->
+
+            <div class="navbar-right">
+
+
+                <!-- Search -->
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        placeholder="Search for products..."
+                    >
+
+                    <i class="bi bi-search"></i>
+
+                </div>
+
+
+                <!-- Favorite -->
+
+                <div class="header-favorite">
+
+                    <button
+                        type="button"
+                        class="favorite-header-btn"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#favoriteOffcanvas">
+
+                        <i class="bi bi-heart"></i>
+
+                        <span id="favoriteCount">
+                            0
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Dark Mode -->
+<!-- 
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle dark mode">
+
+                    <i class="bi bi-moon-fill"></i>
+
+                </button> -->
+
+
+                <!-- Cart -->
+
+                <button
+                    class="cart-header-btn"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#cartOffcanvas">
+
+                    <i class="bi bi-cart3"></i>
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     SHOP FIRST SECTION
+===================================================== -->
+
+<section class="shop-hero-premium">
+
+
+    <!-- Background -->
+
+    <div class="shop-orb shop-orb-one"></div>
+
+    <div class="shop-orb shop-orb-two"></div>
+
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+
+            <!-- =================================================
+                 LEFT
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="shop-hero-content">
+
+
+                    <!-- Label -->
+
+                    <div
+                        class="shop-label reveal-left">
+
+                        <span class="label-dot"></span>
+
+                        FRESHNESS STARTS HERE
+
+                    </div>
+
+
+                    <!-- Heading -->
+
+                    <h1 class="reveal-up">
+
+                        Shop Fresh.
+
+                        <br>
+
+                        <span>Live Better.</span>
+
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p class="shop-hero-text reveal-up">
+
+                        Discover fresh groceries, everyday essentials
+                        and premium products carefully selected for
+                        your home.
+
+                    </p>
+
+
+                    <!-- Search -->
+
+                    <div
+                        class="shop-search reveal-up">
+
+                        <i class="bi bi-search"></i>
+
+                        <input
+                            id="shopSearch"
+                            type="text"
+                            placeholder="What are you looking for?"
+                        >
+
+                        <button
+                            id="shopSearchBtn"
+                            type="button">
+
+                            Search
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Quick Categories -->
+
+                    <div
+                        class="quick-categories reveal-up">
+
+                        <span>
+                            Popular:
+                        </span>
+
+                        <button>
+                            Fruits
+                        </button>
+
+                        <button>
+                            Vegetables
+                        </button>
+
+                        <button>
+                            Dairy
+                        </button>
+
+                        <button>
+                            Snacks
+                        </button>
+
+                    </div>
+
+
+                    <!-- Buttons -->
+
+                    <div
+                        class="shop-hero-buttons reveal-up">
+
+                        <a
+                            href="#shop-products"
+                            class="shop-primary-btn">
+
+                            Start Shopping
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="index.html"
+                            class="shop-secondary-btn">
+
+                            <i class="bi bi-house"></i>
+
+                            Home
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Trust -->
+
+                    <div
+                        class="shop-trust reveal-up">
+
+
+                        <div class="trust-item">
+
+                            <div class="trust-icon">
+
+                                <i class="bi bi-leaf"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Fresh Products
+                                </strong>
+
+                                <small>
+                                    Carefully selected
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="trust-divider"></div>
+
+
+                        <div class="trust-item">
+
+                            <div class="trust-icon">
+
+                                <i class="bi bi-truck"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Fast Delivery
+                                </strong>
+
+                                <small>
+                                    Straight to you
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT VISUAL
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div
+                    class="shop-visual reveal-right">
+
+
+                    <!-- Main Glass Card -->
+
+                    <div class="shop-glass-card">
+
+
+                        <!-- Top -->
+
+                        <div
+                            class="glass-card-top">
+
+                            <div>
+
+                                <span>
+                                    GREENBASKET
+                                </span>
+
+                                <small>
+                                    PREMIUM SELECTION
+                                </small>
+
+                            </div>
+
+
+                            <button
+                                id="shopHeroHeart"
+                                class="shop-heart"
+                                type="button">
+
+                                <i class="bi bi-heart"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Product Visual -->
+
+                        <div class="premium-product-visual">
+
+
+                            <div class="product-glow"></div>
+
+
+                            <div
+                                class="product-circle circle-back">
+                            </div>
+
+
+                            <div
+                                class="product-circle circle-front">
+                            </div>
+
+
+                            <div class="basket-visual">
+
+                                <i class="bi bi-basket2-fill"></i>
+
+                            </div>
+
+
+                            <!-- Floating Fruit -->
+
+                            <div
+                                class="floating-product fruit-one">
+
+                                <i class="bi bi-apple"></i>
+
+                            </div>
+
+
+                            <div
+                                class="floating-product fruit-two">
+
+                                <i class="bi bi-leaf-fill"></i>
+
+                            </div>
+
+
+                            <div
+                                class="floating-product fruit-three">
+
+                                <i class="bi bi-flower1"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- Bottom -->
+
+                        <div
+                            class="glass-card-bottom">
+
+
+                            <div>
+
+                                <span>
+                                    TODAY'S FRESH PICK
+                                </span>
+
+                                <h3>
+                                    Fresh Everyday
+                                </h3>
+
+                                <p>
+                                    Quality you can trust
+                                </p>
+
+                            </div>
+
+
+                            <div
+                                class="hero-price">
+
+                                <small>
+                                    FROM
+                                </small>
+
+                                <strong>
+                                    $4.99
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating Info 1 -->
+
+                    <div
+                        class="premium-floating-card floating-one">
+
+                        <div class="floating-card-icon">
+
+                            <i class="bi bi-patch-check-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                100% Fresh
+                            </strong>
+
+                            <span>
+                                Quality guaranteed
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating Info 2 -->
+
+                    <div
+                        class="premium-floating-card floating-two">
+
+                        <div class="floating-card-icon">
+
+                            <i class="bi bi-lightning-charge-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Fast Delivery
+                            </strong>
+
+                            <span>
+                                Right to your door
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     SECTION 2 — FRESH CATEGORIES
+===================================================== -->
+
+<section class="farm-partners-section">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="farm-partners-header reveal-up">
+
+            <div>
+
+                <span class="farm-partners-eyebrow">
+                    FRESH EVERY DAY
+                </span>
+
+                <h2>
+                    Everything fresh,
+                    <em>all in one place.</em>
+                </h2>
+
+            </div>
+
+            <p>
+                From farm-fresh produce to everyday essentials,
+                discover carefully selected groceries made for
+                your everyday life.
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORY CARDS -->
+        <div class="farm-partners-grid">
+
+
+            <!-- CARD 01 -->
+            <a href="#shop-products"
+               class="farm-partner-card reveal-up">
+
+                <div class="farm-card-number">
+                    01
+                </div>
+
+                <div class="product-image">
+    <img src="fruits.png" alt="Red Apples">
+</div>
+
+                <div class="farm-card-content">
+
+                    <small>
+                        NATURALLY FRESH
+                    </small>
+
+                    <h3>
+                        Fresh Fruits
+                    </h3>
+
+                    <p>
+                        Sweet, juicy and carefully selected
+                        seasonal favourites.
+                    </p>
+
+                </div>
+
+                <div class="farm-card-bottom">
+
+                    <span>
+                        Explore collection
+                    </span>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- CARD 02 -->
+            <a href="#shop-products"
+               class="farm-partner-card reveal-up">
+
+                <div class="farm-card-number">
+                    02
+                </div>
+
+               <div class="product-image">
+    <img src="vegetable.png" alt="Fresh Lettuce">
+</div>
+
+                <div class="farm-card-content">
+
+                    <small>
+                        FARM FRESH
+                    </small>
+
+                    <h3>
+                        Vegetables
+                    </h3>
+
+                    <p>
+                        Crisp, healthy vegetables selected
+                        for quality and freshness.
+                    </p>
+
+                </div>
+
+                <div class="farm-card-bottom">
+
+                    <span>
+                        Explore collection
+                    </span>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- CARD 03 -->
+            <a href="#shop-products"
+               class="farm-partner-card reveal-up">
+
+                <div class="farm-card-number">
+                    03
+                </div>
+<div class="product-image">
+    <img src="2.png" alt="Fresh Lettuce">
+</div>
+
+                <div class="farm-card-content">
+
+                    <small>
+                        EVERYDAY ESSENTIALS
+                    </small>
+
+                    <h3>
+                        Dairy & Eggs
+                    </h3>
+
+                    <p>
+                        Quality dairy products and fresh eggs
+                        for your everyday needs.
+                    </p>
+
+                </div>
+
+                <div class="farm-card-bottom">
+
+                    <span>
+                        Explore collection
+                    </span>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- CARD 04 -->
+            <a href="#shop-products"
+               class="farm-partner-card reveal-up">
+
+                <div class="farm-card-number">
+                    04
+                </div>
+
+                <div class="product-image">
+    <img src="4.png" alt="Fresh Lettuce">
+</div>
+
+                 <div class="farm-card-content">
+
+                    <small>
+                        BAKED WITH CARE
+                    </small>
+
+                    <h3>
+                        Bakery
+                    </h3>
+
+                    <p>
+                        Freshly baked favourites for breakfast,
+                        snacks and every special moment.
+                    </p>
+
+                </div>
+
+                <div class="farm-card-bottom">
+
+                    <span>
+                        Explore collection
+                    </span>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </div>
+
+            </a>
+
+        </div> 
+
+
+        <!-- BOTTOM STATEMENT -->
+        <div class="farm-partners-bottom reveal-up">
+
+            <span></span>
+
+            <p>
+                Carefully selected. Naturally fresh.
+            </p>
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     SECTION 3 — ALL PRODUCTS / SHOP EVERYTHING
+===================================================== -->
+
+<section class="shop-all-products-section" id="shop-products">
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="shop-products-heading reveal-up">
+
+            <div>
+
+                <span class="shop-products-label">
+                    OUR COMPLETE COLLECTION
+                </span>
+
+                <h2>
+                    Shop <em>everything.</em>
+                </h2>
+
+                <p>
+                    Fresh groceries and everyday essentials,
+                    carefully selected for your home.
+                </p>
+
+            </div>
+
+            <div class="shop-products-count">
+                <strong id="productsCount">8</strong>
+                <span>products</span>
+            </div>
+
+        </div>
+
+
+        <!-- ================= TOOLBAR ================= -->
+
+        <div class="shop-products-toolbar reveal-up">
+
+
+            <!-- SEARCH -->
+
+            <div class="catalog-search">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                    type="text"
+                    id="catalogSearch"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="catalog-filters">
+
+                <button
+                    class="catalog-filter active"
+                    data-category="all">
+
+                    All
+
+                </button>
+
+                <button
+                    class="catalog-filter"
+                    data-category="fruits">
+
+                    Fruits
+
+                </button>
+
+                <button
+                    class="catalog-filter"
+                    data-category="vegetables">
+
+                    Vegetables
+
+                </button>
+
+                <button
+                    class="catalog-filter"
+                    data-category="dairy">
+
+                    Dairy
+
+                </button>
+
+                <button
+                    class="catalog-filter"
+                    data-category="bakery">
+
+                    Bakery
+
+                </button>
+
+            </div>
+
+
+            <!-- SORT -->
+
+            <div class="catalog-sort">
+
+                <i class="bi bi-sliders"></i>
+
+                <select id="productSort">
+
+                    <option value="default">
+                        Sort by
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="name">
+                        Name: A-Z
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <div
+            class="shop-products-grid"
+            id="shopProductsGrid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="fruits"
+                data-name="Red Apples"
+                data-price="4.99">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag">
+                        FRESH
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="apple.png"
+                        alt="Red Apples">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        FRESH FRUITS
+                    </span>
+
+                    <h3>
+                        Red Apples
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.9
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $4.99
+                            </strong>
+
+                            <small>
+                                / kg
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Red Apples', 4.99, 'apple.png')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="vegetables"
+                data-name="Fresh Lettuce"
+                data-price="2.99">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag">
+                        FRESH
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="lutte.jpg"
+                        alt="Fresh Lettuce">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        VEGETABLES
+                    </span>
+
+                    <h3>
+                        Fresh Lettuce
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.8
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $2.99
+                            </strong>
+
+                            <small>
+                                / piece
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Fresh Lettuce', 2.99, 'lutte.jpg')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="dairy"
+                data-name="Organic Milk"
+                data-price="3.49">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag premium-tag">
+                        ORGANIC
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="milk2.png"
+                        alt="Organic Milk">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        DAIRY
+                    </span>
+
+                    <h3>
+                        Organic Milk
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.9
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $3.49
+                            </strong>
+
+                            <small>
+                                / litre
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Organic Milk', 3.49, 'milk2.png')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="bakery"
+                data-name="Fresh Bread"
+                data-price="3.99">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag">
+                        BAKERY
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="bread.png"
+                        alt="Fresh Bread">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        BAKERY
+                    </span>
+
+                    <h3>
+                        Fresh Bread
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.7
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $3.99
+                            </strong>
+
+                            <small>
+                                / loaf
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Fresh Bread', 3.99, 'bread.png')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="fruits"
+                data-name="Fresh Bananas"
+                data-price="2.49">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag">
+                        VALUE
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="banana.jpg"
+                        alt="Fresh Bananas">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        FRESH FRUITS
+                    </span>
+
+                    <h3>
+                        Fresh Bananas
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.8
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $2.49
+                            </strong>
+
+                            <small>
+                                / kg
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Fresh Bananas', 2.49, 'banana.jpg')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="vegetables"
+                data-name="Fresh Tomatoes"
+                data-price="3.29">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag">
+                        FARM FRESH
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="tomato.jpg"
+                        alt="Fresh Tomatoes">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        VEGETABLES
+                    </span>
+
+                    <h3>
+                        Fresh Tomatoes
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.8
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $3.29
+                            </strong>
+
+                            <small>
+                                / kg
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Fresh Tomatoes', 3.29, 'tomato.jpg')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 7 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="dairy"
+                data-name="Fresh Yogurt"
+                data-price="4.29">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag premium-tag">
+                        PREMIUM
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="yougurt.jpg"
+                        alt="Fresh Yogurt">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        DAIRY
+                    </span>
+
+                    <h3>
+                        Fresh Yogurt
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.9
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $4.29
+                            </strong>
+
+                            <small>
+                                / pack
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Fresh Yogurt', 4.29, 'yougurt.jpg')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 8 -->
+
+            <article
+                class="shop-product-card reveal-up"
+                data-category="bakery"
+                data-name="Croissants"
+                data-price="5.49">
+
+                <div class="shop-product-image">
+
+                    <span class="shop-product-tag">
+                        NEW
+                    </span>
+
+                    <button
+                        class="shop-product-heart"
+                        type="button">
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="crosant.jpg"
+                        alt="Fresh Croissants">
+
+                </div>
+
+
+                <div class="shop-product-info">
+
+                    <span class="shop-product-category">
+                        BAKERY
+                    </span>
+
+                    <h3>
+                        Fresh Croissants
+                    </h3>
+
+                    <div class="shop-product-rating">
+
+                        <span>★★★★★</span>
+
+                        <small>
+                            4.8
+                        </small>
+
+                    </div>
+
+
+                    <div class="shop-product-footer">
+
+                        <div>
+
+                            <strong>
+                                $5.49
+                            </strong>
+
+                            <small>
+                                / pack
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="shop-add-cart"
+                            type="button"
+                            onclick="addToCart('Fresh Croissants', 5.49, 'crosant.jpg')">
+
+                            <i class="bi bi-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- ================= NO RESULTS ================= -->
+
+        <div
+            class="shop-no-results"
+            id="shopNoResults">
+
+            <i class="bi bi-search"></i>
+
+            <h3>
+                No products found
+            </h3>
+
+            <p>
+                Try another product or category.
+            </p>
+
+        </div>
+
+
+        <!-- ================= BOTTOM ================= -->
+
+        <div class="shop-products-bottom reveal-up">
+
+            <span></span>
+
+            <p>
+                Quality groceries, made simple.
+            </p>
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 4 — DAILY DEALS
+===================================================== -->
+
+<section class="shop-deals-section" id="daily-deals">
+
+    <div class="container">
+
+        <div class="shop-deals-card reveal-up">
+
+            <!-- LEFT CONTENT -->
+
+            <div class="shop-deals-content">
+
+                <span class="shop-deals-label">
+                    LIMITED TIME OFFER
+                </span>
+
+                <h2>
+                    Fresh deals.
+                    <br>
+                    <em>Better prices.</em>
+                </h2>
+
+                <p>
+                    Save more on carefully selected groceries
+                    while today's special offers last.
+                </p>
+
+
+                <!-- COUNTDOWN -->
+
+                <div class="deal-countdown">
+
+                    <div class="deal-time-box">
+
+                        <strong id="dealHours">
+                            12
+                        </strong>
+
+                        <span>
+                            Hours
+                        </span>
+
+                    </div>
+
+
+                    <div class="deal-colon">
+                        :
+                    </div>
+
+
+                    <div class="deal-time-box">
+
+                        <strong id="dealMinutes">
+                            45
+                        </strong>
+
+                        <span>
+                            Minutes
+                        </span>
+
+                    </div>
+
+
+                    <div class="deal-colon">
+                        :
+                    </div>
+
+
+                    <div class="deal-time-box">
+
+                        <strong id="dealSeconds">
+                            30
+                        </strong>
+
+                        <span>
+                            Seconds
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <a
+                    href="#shop-products"
+                    class="shop-deal-btn"
+                    id="shopDealBtn">
+
+                    Shop today's deal
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT PRODUCT -->
+
+            <div class="shop-deal-product">
+
+                <div class="deal-product-glow"></div>
+
+
+                <div class="deal-discount">
+
+                    <span>
+                        SAVE
+                    </span>
+
+                    <strong>
+                        25%
+                    </strong>
+
+                </div>
+
+
+                <div class="deal-product-image">
+
+                    <img
+                        src="apple.png"
+                        alt="Fresh Red Apples">
+
+                </div>
+
+
+                <div class="deal-product-info">
+
+                    <span>
+                        DEAL OF THE DAY
+                    </span>
+
+                    <h3>
+                        Fresh Red Apples
+                    </h3>
+
+                    <div>
+
+                        <strong>
+                            $3.74
+                        </strong>
+
+                        <del>
+                            $4.99
+                        </del>
+
+                        <small>
+                            / kg
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM TRUST ROW -->
+
+        <div class="shop-deals-benefits reveal-up">
+
+            <div class="deal-benefit">
+
+                <i class="bi bi-lightning-charge"></i>
+
+                <div>
+
+                    <strong>
+                        Limited offer
+                    </strong>
+
+                    <span>
+                        Available today
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="deal-benefit">
+
+                <i class="bi bi-bag-check"></i>
+
+                <div>
+
+                    <strong>
+                        Easy shopping
+                    </strong>
+
+                    <span>
+                        Add directly to cart
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="deal-benefit">
+
+                <i class="bi bi-truck"></i>
+
+                <div>
+
+                    <strong>
+                        Fast delivery
+                    </strong>
+
+                    <span>
+                        Straight to your door
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PREMIUM FRESHCART FOOTER
+========================= -->
+
+<footer class="fc-footer">
+
+    <!-- Newsletter -->
+    <div class="fc-newsletter">
+        <div class="container">
+            <div class="fc-newsletter-box">
+
+                <div class="fc-newsletter-content">
+                    <span class="fc-newsletter-badge">
+                        Fresh Updates
+                    </span>
+
+                    <h2>
+                        Get Fresh Deals <span>Every Week</span>
+                    </h2>
+
+                    <p>
+                        Subscribe to our newsletter and get exclusive
+                        offers, fresh arrivals and special discounts.
+                    </p>
+                </div>
+
+                <form class="fc-newsletter-form">
+                    <div class="fc-input-box">
+                        <span>✉</span>
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Subscribe
+                        <span>→</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="fc-footer-main">
+        <div class="container">
+
+            <div class="fc-footer-grid">
+
+                <!-- Brand -->
+                <div class="fc-footer-brand">
+
+                    <a href="index.html" class="fc-logo">
+                        Green<span>Basket</span>
+                    </a>
+
+                    <p>
+                        Your everyday grocery destination for fresh,
+                        healthy and quality products delivered right
+                        to your doorstep.
+                    </p>
+
+                    <div class="fc-trust">
+                        <div class="fc-trust-icon">✓</div>
+                        <div>
+                            <strong>100% Fresh Products</strong>
+                            <small>Quality you can trust</small>
+                        </div>
+                    </div>
+
+                    <div class="fc-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            𝕏
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            in
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Shop -->
+                <div class="fc-footer-column">
+
+                    <h4>Shop</h4>
+
+                    <a href="shop.html">
+                        All Products
+                    </a>
+
+                    <a href="shop.html#popular-products">
+                        Popular Products
+                    </a>
+
+                    <a href="shop.html#daily-deals">
+                        Daily Deals
+                    </a>
+
+                    <a href="shop.html#vegetables">
+                        Fresh Vegetables
+                    </a>
+
+                    <a href="shop.html#fruits">
+                        Fresh Fruits
+                    </a>
+
+                </div>
+
+
+                <!-- Information -->
+                <div class="fc-footer-column">
+
+                    <h4>Information</h4>
+
+                    <a href="about.html">
+                        About FreshCart
+                    </a>
+
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a href="faq.html">
+                        Frequently Asked Questions
+                    </a>
+
+                    <a href="shipping.html">
+                        Shipping & Delivery
+                    </a>
+
+                    <a href="returns.html">
+                        Returns & Refunds
+                    </a>
+
+                </div>
+
+
+                <!-- Customer -->
+                <div class="fc-footer-column">
+
+                    <h4>Customer Care</h4>
+
+                    <a href="account.html">
+                        My Account
+                    </a>
+
+                    <a href="track-order.html">
+                        Track My Order
+                    </a>
+
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms.html">
+                        Terms & Conditions
+                    </a>
+
+                    <a href="contact.html">
+                        Help Center
+                    </a>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="fc-footer-column fc-contact">
+
+                    <h4>Contact Us</h4>
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <small>Our Location</small>
+                            <p>123 Fresh Street, Your City</p>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📞
+                        </div>
+
+                        <div>
+                            <small>Call Us</small>
+                            <a href="tel:+1234567890">
+                                +1 234 567 890
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <small>Email Us</small>
+                            <a href="mailto:hello@freshcart.com">
+                                hello@freshcart.com
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            🕒
+                        </div>
+
+                        <div>
+                            <small>Opening Hours</small>
+                            <p>Mon - Sun: 8AM - 10PM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="fc-footer-bottom">
+
+        <div class="container">
+
+            <div class="fc-bottom-inner">
+
+                <p>
+                    © 2026
+                    <strong>FreshCart</strong>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="fc-payment">
+
+                    <span>We Accept</span>
+
+                    <div class="fc-payment-card">
+                        VISA
+                    </div>
+
+                    <div class="fc-payment-card">
+                        MC
+                    </div>
+
+                    <div class="fc-payment-card">
+                        Pay
+                    </div>
+
+                    <div class="fc-payment-card">
+                        COD
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+```
+
+<!-- Bootstrap -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="shop.js"></script>
+<script src="theme.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenBasket - Checkout</title>
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+<!-- Bootstrap Icons -->
+<link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+>
+    <!-- Checkout CSS -->
+     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+    
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid px-lg-5">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#">
+            <div class="logo-icon">
+                <i class="bi bi-basket2-fill"></i>
+            </div>
+
+            <div>
+                <span>Green<span class="logo-green">Basket</span></span>
+                <small>Fresh & Healthy</small>
+            </div>
+        </a>
+
+
+        <!-- Mobile Toggle -->
+        <!-- <button 
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <!-- Links -->
+            <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">Checkout</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+
+            <!-- Right Side -->
+            <div class="navbar-right">
+
+                <!-- Search -->
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        placeholder="Search for products..."
+                    >
+
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <!-- Icons -->
+                 <div class="header-favorite">
+    <button
+        type="button"
+        class="favorite-header-btn"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#favoriteOffcanvas">
+
+        <i class="bi bi-heart"></i>
+
+        <span id="favoriteCount">0</span>
+    </button>
+</div>
+                
+                <!-- Dark Mode Button -->
+<!-- 
+<button
+    id="themeToggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Toggle dark mode">
+
+    <i class="bi bi-moon-fill"></i>
+
+</button> -->
+
+               <button
+    class="cart-header-btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#cartOffcanvas">
+
+    <i class="bi bi-cart3"></i>
+
+    <span id="cartCount">0</span>
+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- ==========================================
+     CHECKOUT HERO SECTION
+========================================== -->
+
+<section class="checkout-hero">
+
+    <div class="container">
+
+        <div class="checkout-hero-content">
+
+            <div class="checkout-badge">
+                <i class="bi bi-shield-check"></i>
+                SECURE SHOPPING
+            </div>
+
+            <h1>
+                Complete Your
+                <span>Order</span>
+            </h1>
+
+            <p>
+                You're just a few steps away from receiving
+                fresh groceries at your doorstep.
+            </p>
+
+
+            <!-- Checkout Progress -->
+
+            <div class="checkout-progress">
+
+                <!-- Cart -->
+                <div class="checkout-step completed">
+
+                    <div class="step-circle">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+
+                    <div class="step-info">
+                        <span>Step 1</span>
+                        <strong>Cart</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-connector active"></div>
+
+
+                <!-- Checkout -->
+                <div class="checkout-step active">
+
+                    <div class="step-circle">
+                        <span>2</span>
+                    </div>
+
+                    <div class="step-info">
+                        <span>Step 2</span>
+                        <strong>Checkout</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-connector"></div>
+
+
+                <!-- Complete -->
+                <div class="checkout-step">
+
+                    <div class="step-circle">
+                        <span>3</span>
+                    </div>
+
+                    <div class="step-info">
+                        <span>Step 3</span>
+                        <strong>Complete</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security -->
+            <div class="checkout-security">
+
+                <div class="security-item">
+                    <i class="bi bi-lock-fill"></i>
+                    <span>Secure Checkout</span>
+                </div>
+
+                <div class="security-item">
+                    <i class="bi bi-truck"></i>
+                    <span>Fast Delivery</span>
+                </div>
+
+                <div class="security-item">
+                    <i class="bi bi-headset"></i>
+                    <span>24/7 Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     SECTION 2 — DELIVERY ADDRESS
+========================================== -->
+
+<section class="delivery-address-section">
+
+    <div class="container">
+
+        <div class="row g-5 align-items-start">
+
+            <!-- LEFT: ADDRESS FORM -->
+            <div class="col-lg-7">
+
+                <div class="delivery-form-card">
+
+                    <div class="section-heading">
+
+                        <span class="section-mini-label">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            DELIVERY DETAILS
+                        </span>
+
+                        <h2>
+                            Where should we
+                            <span>deliver?</span>
+                        </h2>
+
+                        <p>
+                            Enter your delivery address so we can get your
+                            fresh groceries to the right doorstep.
+                        </p>
+
+                    </div>
+
+
+                    <form id="deliveryAddressForm">
+
+                        <div class="row g-4">
+
+                            <!-- First Name -->
+                            <div class="col-md-6">
+
+                                <label for="firstName">
+                                    First Name
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-person"></i>
+
+                                    <input
+                                        type="text"
+                                        id="firstName"
+                                        name="firstName"
+                                        placeholder="Enter first name"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- Last Name -->
+                            <div class="col-md-6">
+
+                                <label for="lastName">
+                                    Last Name
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-person"></i>
+
+                                    <input
+                                        type="text"
+                                        id="lastName"
+                                        name="lastName"
+                                        placeholder="Enter last name"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div class="col-md-6">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-telephone"></i>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="+92 300 0000000"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="col-md-6">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-envelope"></i>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="you@example.com"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- Street Address -->
+                            <div class="col-12">
+
+                                <label for="address">
+                                    Street Address
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-house"></i>
+
+                                    <input
+                                        type="text"
+                                        id="address"
+                                        name="address"
+                                        placeholder="House number, street name"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- Apartment -->
+                            <div class="col-12">
+
+                                <label for="apartment">
+                                    Apartment / Floor
+                                    <span>(Optional)</span>
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-building"></i>
+
+                                    <input
+                                        type="text"
+                                        id="apartment"
+                                        name="apartment"
+                                        placeholder="Apartment, floor, unit etc."
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- City -->
+                            <div class="col-md-5">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-buildings"></i>
+
+                                    <input
+                                        type="text"
+                                        id="city"
+                                        name="city"
+                                        placeholder="Your city"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- State -->
+                            <div class="col-md-4">
+
+                                <label for="state">
+                                    State / Province
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-map"></i>
+
+                                    <input
+                                        type="text"
+                                        id="state"
+                                        name="state"
+                                        placeholder="Province"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- ZIP -->
+                            <div class="col-md-3">
+
+                                <label for="zip">
+                                    ZIP Code
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <i class="bi bi-mailbox"></i>
+
+                                    <input
+                                        type="text"
+                                        id="zip"
+                                        name="zip"
+                                        placeholder="00000"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- Save Address -->
+                            <div class="col-12">
+
+                                <label class="save-address">
+
+                                    <input
+                                        type="checkbox"
+                                        id="saveAddress"
+                                    >
+
+                                    <span class="custom-check">
+                                        <i class="bi bi-check"></i>
+                                    </span>
+
+                                    <span>
+                                        Save this address for future orders
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: DELIVERY INFO -->
+            <div class="col-lg-5">
+
+                <div class="delivery-info-wrapper">
+
+                    <div class="delivery-info-card">
+
+                        <div class="delivery-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+
+                        <span class="delivery-tag">
+                            FRESH AT YOUR DOOR
+                        </span>
+
+                        <h3>
+                            We deliver freshness
+                            <span>straight to you.</span>
+                        </h3>
+
+                        <p>
+                            Your groceries are carefully packed and
+                            delivered with care to keep them fresh.
+                        </p>
+
+
+                        <div class="delivery-benefits">
+
+                            <div class="delivery-benefit">
+
+                                <div class="benefit-icon">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Fast Delivery</strong>
+                                    <small>
+                                        Get your order quickly
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="delivery-benefit">
+
+                                <div class="benefit-icon">
+                                    <i class="bi bi-box-seam"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Carefully Packed</strong>
+                                    <small>
+                                        Freshness protected
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="delivery-benefit">
+
+                                <div class="benefit-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Safe & Reliable</strong>
+                                    <small>
+                                        Trusted delivery service
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Support Card -->
+
+                    <div class="delivery-support-card">
+
+                        <div class="support-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+
+                        <div>
+                            <strong>Need help?</strong>
+
+                            <p>
+                                Our support team is here for you.
+                            </p>
+                        </div>
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     SECTION 3 — DELIVERY METHOD
+========================================== -->
+
+<section class="delivery-method-section">
+
+    <div class="container">
+
+        <div class="delivery-method-header">
+
+            <span class="delivery-method-label">
+                <i class="bi bi-box-seam"></i>
+                SHIPPING OPTIONS
+            </span>
+
+            <h2>
+                Choose your <span>delivery method</span>
+            </h2>
+
+            <p>
+                Select the delivery option that works best for you.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Standard Delivery -->
+            <div class="col-lg-4 col-md-6">
+
+                <label class="delivery-option">
+
+                    <input
+                        type="radio"
+                        name="deliveryMethod"
+                        value="standard"
+                        checked
+                    >
+
+                    <div class="delivery-option-card">
+
+                        <div class="delivery-option-top">
+
+                            <div class="delivery-method-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+
+                            <div class="delivery-radio">
+                                <i class="bi bi-check"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="delivery-option-tag">
+                            MOST POPULAR
+                        </span>
+
+                        <h3>Standard Delivery</h3>
+
+                        <p>
+                            Reliable delivery for your everyday grocery needs.
+                        </p>
+
+                        <div class="delivery-option-details">
+
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                <span>2–4 Business Days</span>
+                            </div>
+
+                            <strong>FREE</strong>
+
+                        </div>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+
+            <!-- Express Delivery -->
+            <div class="col-lg-4 col-md-6">
+
+                <label class="delivery-option">
+
+                    <input
+                        type="radio"
+                        name="deliveryMethod"
+                        value="express"
+                    >
+
+                    <div class="delivery-option-card">
+
+                        <div class="delivery-option-top">
+
+                            <div class="delivery-method-icon express">
+                                <i class="bi bi-lightning-charge-fill"></i>
+                            </div>
+
+                            <div class="delivery-radio">
+                                <i class="bi bi-check"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="delivery-option-tag express-tag">
+                            FASTEST
+                        </span>
+
+                        <h3>Express Delivery</h3>
+
+                        <p>
+                            Get your fresh groceries delivered in no time.
+                        </p>
+
+                        <div class="delivery-option-details">
+
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                <span>Same / Next Day</span>
+                            </div>
+
+                            <strong>$5.99</strong>
+
+                        </div>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+
+            <!-- Scheduled Delivery -->
+            <div class="col-lg-4 col-md-6">
+
+                <label class="delivery-option">
+
+                    <input
+                        type="radio"
+                        name="deliveryMethod"
+                        value="scheduled"
+                    >
+
+                    <div class="delivery-option-card">
+
+                        <div class="delivery-option-top">
+
+                            <div class="delivery-method-icon scheduled">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+
+                            <div class="delivery-radio">
+                                <i class="bi bi-check"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="delivery-option-tag scheduled-tag">
+                            FLEXIBLE
+                        </span>
+
+                        <h3>Scheduled Delivery</h3>
+
+                        <p>
+                            Pick a convenient date and time for your delivery.
+                        </p>
+
+                        <div class="delivery-option-details">
+
+                            <div>
+                                <i class="bi bi-calendar3"></i>
+                                <span>Choose Your Time</span>
+                            </div>
+
+                            <strong>$2.99</strong>
+
+                        </div>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- Delivery Note -->
+
+        <div class="delivery-method-note">
+
+            <i class="bi bi-info-circle"></i>
+
+            <p>
+                Delivery times may vary depending on your location
+                and order availability.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     SECTION 4 — PAYMENT METHOD
+========================================== -->
+
+<section class="payment4-section">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="payment4-heading">
+
+            <div class="payment4-label">
+                <span></span>
+                PAYMENT
+                <span></span>
+            </div>
+
+            <h2>
+                Choose Your <b>Payment</b>
+            </h2>
+
+            <p>
+                Select a payment method that works best for you.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- =====================================
+                 LEFT — PAYMENT OPTIONS
+            ====================================== -->
+
+            <div class="col-lg-7">
+
+                <div class="payment4-options">
+
+                    <div class="payment4-top">
+
+                        <div>
+                            <small>STEP 03</small>
+
+                            <h3>
+                                Payment Method
+                            </h3>
+                        </div>
+
+                        <div class="payment4-step-icon">
+                            <i class="bi bi-credit-card"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- OPTION 1 -->
+
+                    <label class="payment4-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cod"
+                            checked
+                        >
+
+                        <div class="payment4-option-box">
+
+                            <div class="payment4-option-icon cash">
+                                <i class="bi bi-cash-stack"></i>
+                            </div>
+
+                            <div class="payment4-option-content">
+
+                                <strong>
+                                    Cash on Delivery
+                                </strong>
+
+                                <span>
+                                    Pay when your order reaches your door.
+                                </span>
+
+                            </div>
+
+                            <div class="payment4-radio">
+                                <i class="bi bi-check"></i>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- OPTION 2 -->
+
+                    <label class="payment4-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="card"
+                        >
+
+                        <div class="payment4-option-box">
+
+                            <div class="payment4-option-icon card">
+                                <i class="bi bi-credit-card-2-front"></i>
+                            </div>
+
+                            <div class="payment4-option-content">
+
+                                <strong>
+                                    Credit / Debit Card
+                                </strong>
+
+                                <span>
+                                    Secure payment using your bank card.
+                                </span>
+
+                            </div>
+
+                            <div class="payment4-radio">
+                                <i class="bi bi-check"></i>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- OPTION 3 -->
+
+                    <label class="payment4-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="wallet"
+                        >
+
+                        <div class="payment4-option-box">
+
+                            <div class="payment4-option-icon wallet">
+                                <i class="bi bi-wallet2"></i>
+                            </div>
+
+                            <div class="payment4-option-content">
+
+                                <strong>
+                                    Digital Wallet
+                                </strong>
+
+                                <span>
+                                    Pay instantly through your online wallet.
+                                </span>
+
+                            </div>
+
+                            <div class="payment4-radio">
+                                <i class="bi bi-check"></i>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <div class="payment4-note">
+
+                        <i class="bi bi-info-circle-fill"></i>
+
+                        <span>
+                            You can securely complete your payment
+                            after reviewing your order.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 RIGHT — PAYMENT OVERVIEW
+            ====================================== -->
+
+            <div class="col-lg-5">
+
+                <div class="payment4-overview">
+
+                    <div class="payment4-overview-head">
+
+                        <div>
+                            <small>CHECKOUT OVERVIEW</small>
+
+                            <h3>
+                                Payment Summary
+                            </h3>
+                        </div>
+
+                        <i class="bi bi-receipt-cutoff"></i>
+
+                    </div>
+
+
+                    <!-- Selected -->
+
+                    <div class="payment4-selected">
+
+                        <span>
+                            SELECTED METHOD
+                        </span>
+
+                        <div class="payment4-selected-row">
+
+                            <div class="payment4-selected-icon">
+                                <i class="bi bi-cash-stack"></i>
+                            </div>
+
+                            <div>
+
+                                <strong id="selectedPaymentText">
+                                    Cash on Delivery
+                                </strong>
+
+                                <small>
+                                    Payment at your doorstep
+                                </small>
+
+                            </div>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Divider -->
+
+                    <div class="payment4-divider"></div>
+
+
+                    <!-- Information -->
+
+                    <div class="payment4-info">
+
+                        <div class="payment4-info-row">
+
+                            <span>
+                                Payment status
+                            </span>
+
+                            <strong class="payment-pending">
+                                Pending
+                            </strong>
+
+                        </div>
+
+                        <div class="payment4-info-row">
+
+                            <span>
+                                Payment processing
+                            </span>
+
+                            <strong>
+                                Secure
+                            </strong>
+
+                        </div>
+
+                        <div class="payment4-info-row">
+
+                            <span>
+                                Order protection
+                            </span>
+
+                            <strong>
+                                Included
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Benefits -->
+
+                    <div class="payment4-benefits">
+
+                        <div>
+                            <i class="bi bi-check2"></i>
+                            No hidden payment fees
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check2"></i>
+                            Secure checkout
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check2"></i>
+                            Order confirmation included
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bottom -->
+
+                    <div class="payment4-bottom">
+
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+
+                        <span>
+                            Review your order before placing it.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     SECTION 5 — ORDER REVIEW & PLACE ORDER
+========================================== -->
+
+<section class="order5-section">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="order5-heading">
+
+            <div class="order5-label">
+                <span></span>
+                FINAL REVIEW
+                <span></span>
+            </div>
+
+            <h2>
+                Review Your <b>Order</b>
+            </h2>
+
+            <p>
+                Check your order details before placing your order.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- =====================================
+                 LEFT — ORDER ITEMS
+            ====================================== -->
+
+            <div class="col-lg-7">
+
+                <div class="order5-items-card">
+
+                    <div class="order5-card-header">
+
+                        <div>
+
+                            <small>YOUR CART</small>
+
+                            <h3>
+                                Order Items
+                            </h3>
+
+                        </div>
+
+                        <div class="order5-count">
+                            3 Items
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 1 -->
+
+                    <div class="order5-product">
+
+                        <div class="order5-product-image">
+
+                            <img
+                                src="apple.jpg"
+                                alt="Fresh Red Apples"
+                            >
+
+                        </div>
+
+                        <div class="order5-product-info">
+
+                            <strong>
+                                Fresh Red Apples
+                            </strong>
+
+                            <span>
+                                Fresh Produce · 1 kg
+                            </span>
+
+                            <small>
+                                Quantity: 1
+                            </small>
+
+                        </div>
+
+                        <strong class="order5-price">
+                            $4.99
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+
+                    <div class="order5-product">
+
+                        <div class="order5-product-image">
+
+                            <img
+                                src="lettuce.jpg"
+                                alt="Fresh Lettuce"
+                            >
+
+                        </div>
+
+                        <div class="order5-product-info">
+
+                            <strong>
+                                Fresh Lettuce
+                            </strong>
+
+                            <span>
+                                Organic Vegetables · 1 pc
+                            </span>
+
+                            <small>
+                                Quantity: 2
+                            </small>
+
+                        </div>
+
+                        <strong class="order5-price">
+                            $5.98
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+
+                    <div class="order5-product">
+
+                        <div class="order5-product-image">
+
+                            <img
+                                src="milk.jpg"
+                                alt="Fresh Milk"
+                            >
+
+                        </div>
+
+                        <div class="order5-product-info">
+
+                            <strong>
+                                Fresh Dairy Milk
+                            </strong>
+
+                            <span>
+                                Dairy · 1 Liter
+                            </span>
+
+                            <small>
+                                Quantity: 1
+                            </small>
+
+                        </div>
+
+                        <strong class="order5-price">
+                            $3.49
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Edit Cart -->
+
+                    <a href="cart.html" class="order5-edit">
+
+                        <i class="bi bi-arrow-left"></i>
+
+                        Edit Cart
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 RIGHT — ORDER TOTAL
+            ====================================== -->
+
+            <div class="col-lg-5">
+
+                <div class="order5-summary">
+
+                    <div class="order5-summary-top">
+
+                        <div>
+
+                            <small>ORDER TOTAL</small>
+
+                            <h3>
+                                Summary
+                            </h3>
+
+                        </div>
+
+                        <i class="bi bi-bag-check"></i>
+
+                    </div>
+
+
+                    <!-- Price -->
+
+                    <div class="order5-prices">
+
+                        <div>
+                            <span>Subtotal</span>
+                            <strong>$14.46</strong>
+                        </div>
+
+                        <div>
+                            <span>Delivery</span>
+                            <strong class="free">
+                                FREE
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Discount</span>
+                            <strong>
+                                -$1.00
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Total -->
+
+                    <div class="order5-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong>
+                            $13.46
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Delivery -->
+
+                    <div class="order5-delivery">
+
+                        <div class="order5-delivery-icon">
+
+                            <i class="bi bi-truck"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Free Delivery
+                            </strong>
+
+                            <span>
+                                Your order will arrive at your
+                                selected address.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Place Order -->
+
+                    <button
+                        type="button"
+                        class="order5-place-btn"
+                        id="placeOrderBtn"
+                    >
+
+                        <span>
+                            Place Order
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- Secure -->
+
+                    <div class="order5-secure">
+
+                        <i class="bi bi-shield-check"></i>
+
+                        <span>
+                            Secure checkout · Your information
+                            is protected
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PREMIUM FRESHCART FOOTER
+=========================  -->
+
+<footer class="fc-footer">
+
+    <!-- Newsletter -->
+    <div class="fc-newsletter">
+        <div class="container">
+            <div class="fc-newsletter-box">
+
+                <div class="fc-newsletter-content">
+                    <span class="fc-newsletter-badge">
+                        Fresh Updates
+                    </span>
+
+                    <h2>
+                        Get Fresh Deals <span>Every Week</span>
+                    </h2>
+
+                    <p>
+                        Subscribe to our newsletter and get exclusive
+                        offers, fresh arrivals and special discounts.
+                    </p>
+                </div>
+
+                <form class="fc-newsletter-form">
+                    <div class="fc-input-box">
+                        <span>✉</span>
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Subscribe
+                        <span>→</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="fc-footer-main">
+        <div class="container">
+
+            <div class="fc-footer-grid">
+
+                <!-- Brand -->
+                <div class="fc-footer-brand">
+
+                    <a href="index.html" class="fc-logo">
+                        Green<span>Basket</span>
+                    </a>
+
+                    <p>
+                        Your everyday grocery destination for fresh,
+                        healthy and quality products delivered right
+                        to your doorstep.
+                    </p>
+
+                    <div class="fc-trust">
+                        <div class="fc-trust-icon">✓</div>
+                        <div>
+                            <strong>100% Fresh Products</strong>
+                            <small>Quality you can trust</small>
+                        </div>
+                    </div>
+
+                    <div class="fc-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            𝕏
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            in
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Shop -->
+                <div class="fc-footer-column">
+
+                    <h4>Shop</h4>
+
+                    <a href="shop.html">
+                        All Products
+                    </a>
+
+                    <a href="shop.html#popular-products">
+                        Popular Products
+                    </a>
+
+                    <a href="shop.html#daily-deals">
+                        Daily Deals
+                    </a>
+
+                    <a href="shop.html#vegetables">
+                        Fresh Vegetables
+                    </a>
+
+                    <a href="shop.html#fruits">
+                        Fresh Fruits
+                    </a>
+
+                </div>
+
+
+                <!-- Information -->
+                <div class="fc-footer-column">
+
+                    <h4>Information</h4>
+
+                    <a href="about.html">
+                        About FreshCart
+                    </a>
+
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a href="faq.html">
+                        Frequently Asked Questions
+                    </a>
+
+                    <a href="shipping.html">
+                        Shipping & Delivery
+                    </a>
+
+                    <a href="returns.html">
+                        Returns & Refunds
+                    </a>
+
+                </div>
+
+
+                <!-- Customer -->
+                <div class="fc-footer-column">
+
+                    <h4>Customer Care</h4>
+
+                    <a href="account.html">
+                        My Account
+                    </a>
+
+                    <a href="track-order.html">
+                        Track My Order
+                    </a>
+
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms.html">
+                        Terms & Conditions
+                    </a>
+
+                    <a href="contact.html">
+                        Help Center
+                    </a>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="fc-footer-column fc-contact">
+
+                    <h4>Contact Us</h4>
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <small>Our Location</small>
+                            <p>123 Fresh Street, Your City</p>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📞
+                        </div>
+
+                        <div>
+                            <small>Call Us</small>
+                            <a href="tel:+1234567890">
+                                +1 234 567 890
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <small>Email Us</small>
+                            <a href="mailto:hello@freshcart.com">
+                                hello@freshcart.com
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            🕒
+                        </div>
+
+                        <div>
+                            <small>Opening Hours</small>
+                            <p>Mon - Sun: 8AM - 10PM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="fc-footer-bottom">
+
+        <div class="container">
+
+            <div class="fc-bottom-inner">
+
+                <p>
+                    © 2026
+                    <strong>FreshCart</strong>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="fc-payment">
+
+                    <span>We Accept</span>
+
+                    <div class="fc-payment-card">
+                        VISA
+                    </div>
+
+                    <div class="fc-payment-card">
+                        MC
+                    </div>
+
+                    <div class="fc-payment-card">
+                        Pay
+                    </div>
+
+                    <div class="fc-payment-card">
+                        COD
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+<script src="checkout.js"></script>
+</body>
+</html>

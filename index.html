@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenBasket - Fresh Groceries</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+    
+
+    <!-- Bootstrap Icons -->
+     <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="js/theme.js"></script> -->
+     <!-- <link rel="stylesheet" href="theme.css"> -->
+    <!-- <link rel="stylesheet" href="shop.css"> -->
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid px-lg-5">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#">
+            <div class="logo-icon">
+                <i class="bi bi-basket2-fill"></i>
+            </div>
+
+            <div>
+                <span>Green<span class="logo-green">Basket</span></span>
+                <small>Fresh & Healthy</small>
+            </div>
+        </a>
+
+
+        <!-- Mobile Toggle -->
+        <!-- <button 
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <!-- Links -->
+            <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">Checkout</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Right Side -->
+            <div class="navbar-right">
+
+                <!-- Search -->
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        placeholder="Search for products..."
+                    >
+
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <!-- Icons -->
+                 <div class="header-favorite">
+    <button
+        type="button"
+        class="favorite-header-btn"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#favoriteOffcanvas">
+
+        <i class="bi bi-heart"></i>
+
+        <span id="favoriteCount">0</span>
+    </button>
+</div>
+                
+                <!-- Dark Mode Button -->
+<!-- 
+<button
+    id="themeToggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Toggle dark mode">
+
+    <i class="bi bi-moon-fill"></i>
+
+</button> -->
+
+               <button
+    class="cart-header-btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#cartOffcanvas">
+
+    <i class="bi bi-cart3"></i>
+
+    <span id="cartCount">0</span>
+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero-section scroll-animate">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="row align-items-center g-0">
+
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-5 hero-content">
+
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <i class="bi bi-leaf-fill"></i>
+                    Fresh Food, Happy Life
+                </div>
+
+
+                <!-- Heading -->
+                <h1>
+                    Fresh Groceries
+                    <br>
+                    Delivered to Your
+                    <br>
+                    <span>Doorstep</span>
+                </h1>
+
+
+                <!-- Description -->
+                <p class="hero-description">
+                    Get the best quality fruits, vegetables, meat,
+                    and essentials delivered fresh to your home.
+                </p>
+
+
+                <!-- Benefits -->
+                <div class="benefits">
+
+                    <!-- Benefit 1 -->
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-flower1"></i>
+                        </div>
+
+                        <div>
+                            <strong>100% Fresh</strong>
+                            <small>Premium Quality</small>
+                        </div>
+                    </div>
+
+
+                    <!-- Benefit 2 -->
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+
+                        <div>
+                            <strong>Fast Delivery</strong>
+                            <small>On Time</small>
+                        </div>
+                    </div>
+
+
+                    <!-- Benefit 3 -->
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                        <div>
+                            <strong>Secure Payment</strong>
+                            <small>100% Secure</small>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="hero-buttons">
+
+                    <a href="#" class="btn-shop">
+                        Shop Now
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#" class="btn-category">
+                        <i class="bi bi-grid"></i>
+                        Explore Categories
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-7 hero-image-wrapper">
+
+                <img 
+                    src="1.png"
+                    alt="Fresh Groceries"
+                    class="hero-image"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= STATS ================= -->
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="stats-box">
+
+            <!-- Customers -->
+            <div class="stat-item">
+
+                <div class="stat-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+
+                <div>
+                    <strong>10,000+</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+            </div>
+
+
+            <!-- Products -->
+            <div class="stat-item">
+
+                <div class="stat-icon">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+
+                <div>
+                    <strong>500+</strong>
+                    <span>Products</span>
+                </div>
+
+            </div>
+
+
+            <!-- Cities -->
+            <div class="stat-item">
+
+                <div class="stat-icon">
+                    <i class="bi bi-geo-alt"></i>
+                </div>
+
+                <div>
+                    <strong>50+</strong>
+                    <span>Cities Covered</span>
+                </div>
+
+            </div>
+
+
+            <!-- Rating -->
+            <div class="stat-item">
+
+                <div class="stat-icon">
+                    <i class="bi bi-star"></i>
+                </div>
+
+                <div>
+                    <strong>4.8</strong>
+                    <span>
+                        Customer Rating
+                        <b class="stars">★★★★★</b>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FEATURED CATEGORIES ================= -->
+
+<section class="featured-categories scroll-left">
+
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="category-header">
+
+            <div>
+                <span class="category-label">
+                    <i class="bi bi-grid-fill"></i>
+                    ALL DEPARTMENTS
+                </span>
+
+                <h2>Featured Categories</h2>
+            </div>
+
+            <a href="#" class="view-all-btn">
+                View all
+            </a>
+
+        </div>
+
+
+        <!-- Categories -->
+        <div class="row g-3">
+
+            <!-- 1 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="2.png" alt="Dairy Bread Eggs">
+                    </div>
+
+                    <h3>Dairy, bread & eggs</h3>
+
+                </div>
+            </div>
+
+
+            <!-- 2 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="3.png" alt="Snacks">
+                    </div>
+
+                    <h3>Snacks & munchies</h3>
+
+                </div>
+            </div>
+
+
+            <!-- 3 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="4.png" alt="Bakery">
+                    </div>
+
+                    <h3>Bakery & biscuits</h3>
+
+                </div>
+            </div>
+
+
+            <!-- 4 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="5.png" alt="Instant Food">
+                    </div>
+
+                    <h3>Instant food</h3>
+
+                </div>
+            </div>
+
+
+            <!-- 5 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="6.png" alt="Tea Coffee Drinks">
+                    </div>
+
+                    <h3>Tea, coffee & drinks</h3>
+
+                </div>
+            </div>
+
+
+            <!-- 6 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="7.png" alt="Atta Rice Dal">
+                    </div>
+
+                    <h3>Atta, rice & dal</h3>
+
+                </div>
+            </div>
+
+
+            <!-- 7 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="8.png" alt="Baby Care">
+                    </div>
+
+                    <h3>Baby care</h3>
+
+                </div>
+            </div>
+
+
+            <!-- 8 -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="category-card">
+
+                    <div class="category-image">
+                        <img src="9.png" alt="Chicken Meat Fish">
+                    </div>
+
+                    <h3>Chicken, meat & fish</h3>
+
+                </div>
+            </div>
+
+        
+           
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Popular Products Section -->
+<section class="popular-products py-5 scroll-right">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="section-heading text-center mb-5">
+            <span class="small-title">Fresh & Quality</span>
+            <h2>Popular Products</h2>
+            <p>Shop our most popular grocery products</p>
+        </div>
+
+        <!-- Products -->
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <span class="discount">-15%</span>
+                        <img src="milk3.png" alt="Fresh Milk">
+                        <button class="heart-btn">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Dairy</span>
+                        <h5>Fresh Full Cream Milk</h5>
+
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price-cart">
+                            <div>
+
+                 <span class="price">$2.99</span>
+                      <del>$3.49</del>                       
+                            </div>
+
+                            <button
+    class="cart-btn"
+    type="button"
+    onclick="addToCart('Fresh Full Cream Milk', 2.99, 'milk3.png')"
+    aria-label="Add Fresh Full Cream Milk to cart"
+>
+    <i class="bi bi-cart-plus"></i>
+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <span class="discount">-10%</span>
+                        <img src="lays.png" alt="Potato Chips">
+                        <button class="heart-btn">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Snacks</span>
+                        <h5>Classic Potato Chips</h5>
+
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+
+                        <div class="price-cart">
+                            <div>
+                                <span class="price">$1.49</span>
+                            <del>$1.69</del>
+                            </div>
+<button
+    class="cart-btn"
+    type="button"
+    onclick="addToCart('Classic Potato Chips', 1.49, 'lays.png')"
+    aria-label="Add Classic Potato Chips to cart"
+>
+    <i class="bi bi-cart-plus"></i>
+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <span class="discount">-12%</span>
+                        <img src="rice.png" alt="Basmati Rice">
+                        <button class="heart-btn">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Grocery</span>
+                        <h5>Premium Basmati Rice</h5>
+
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>(4.6)</span>
+                        </div>
+
+                        <div class="price-cart">
+                            <div>
+                                <span class="price">$5.99</span>
+                              <del>$6.79</del>
+                            </div>
+<button
+    class="cart-btn"
+    type="button"
+    onclick="addToCart('Premium Basmati Rice', 5.99, 'rice.png')"
+    aria-label="Add Premium Basmati Rice to cart"
+>
+    <i class="bi bi-cart-plus"></i>
+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <span class="discount">-18%</span>
+                        <img src="cofee.png" alt="Coffee">
+                         <button class="heart-btn">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Beverages</span>
+                        <h5>Classic Instant Coffee</h5>
+
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <span>(4.2)</span>
+                        </div>
+
+                        <div class="price-cart">
+                            <div>
+                                <span class="price">$6.49</span>
+                           <del>$7.90</del>
+                            </div>
+<button
+    class="cart-btn"
+    type="button"
+    onclick="addToCart('Classic Instant Coffee', 6.49, 'cofee.png')"
+    aria-label="Add Classic Instant Coffee to cart"
+>
+    <i class="bi bi-cart-plus"></i>
+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-5">
+            <a href="#" class="view-products-btn">
+                View All Products
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- =========================
+     PROFESSIONAL DAILY DEALS
+========================= -->
+
+<section class="daily-deals-section py-5  scroll-zoom">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="deals-header">
+
+            <div>
+                <span class="deals-label">
+                    LIMITED TIME OFFERS
+                </span>
+
+                <h2>
+                    Daily Deals
+                </h2>
+
+                <p>
+                    Save more on your everyday grocery essentials
+                </p>
+            </div>
+
+
+            <a href="#" class="deals-view-btn">
+                View All Deals
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- =========================
+                 FEATURED DEAL
+            ========================= -->
+
+            <div class="col-lg-5">
+
+                <div class="featured-deal">
+
+                    <div class="featured-content">
+
+                        <span class="featured-tag">
+                            DEAL OF THE DAY
+                        </span>
+
+                        <h3>
+                            Fresh Grocery<br>
+                            Essentials
+                        </h3>
+
+                        <p>
+                            Get amazing discounts on selected
+                            fresh products today.
+                        </p>
+
+
+                        <!-- Discount -->
+                        <div class="discount-text">
+                            UP TO <strong>40% OFF</strong>
+                        </div>
+
+
+                        <!-- Countdown -->
+                        <div class="countdown">
+
+                            <div>
+                                <strong>08</strong>
+                                <span>Hours</span>
+                            </div>
+
+                            <b>:</b>
+
+                            <div>
+                                <strong>24</strong>
+                                <span>Minutes</span>
+                            </div>
+
+                            <b>:</b>
+
+                            <div>
+                                <strong>36</strong>
+                                <span>Seconds</span>
+                            </div>
+
+                        </div>
+
+
+                        <a href="#" class="shop-deal-btn">
+                            Shop Deal
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="featured-decoration">
+                        <i class="bi bi-basket2"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 DEAL PRODUCTS
+            ========================= -->
+
+            <div class="col-lg-7">
+
+                <div class="row g-4">
+
+
+                    <!-- Deal Product 1 -->
+                    <!-- ==========================================
+     DEAL PRODUCT 1 — FRESH FULL CREAM MILK
+========================================== -->
+
+<div class="col-md-6">
+
+    <div class="deal-product-card">
+
+        <!-- Product Image -->
+        <div class="deal-product-image">
+
+            <span class="deal-discount">
+                -30%
+            </span>
+
+            <img
+                src="milk2.png"
+                alt="Fresh Full Cream Milk"
+            >
+
+            <!-- Favorite -->
+            <button
+                class="deal-heart"
+                type="button"
+                aria-label="Add to favorites"
+            >
+                <i class="bi bi-heart"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Product Information -->
+        <div class="deal-product-info">
+
+            <span>
+                Dairy
+            </span>
+
+            <h5>
+                Fresh Full Cream Milk
+            </h5>
+
+
+            <!-- Rating -->
+            <div class="deal-stars">
+                ★★★★★
+                <small>(4.5)</small>
+            </div>
+
+
+            <!-- Price + Cart -->
+            <div class="deal-price-row">
+
+                <div>
+                    <strong>$2.99</strong>
+                    <del>$4.29</del>
+                </div>
+
+
+                <!-- ADD TO CART -->
+                <button
+                    class="deal-add-btn"
+                    type="button"
+                    onclick="addToCart(
+                        'Fresh Full Cream Milk',
+                        2.99,
+                        'milk2.png'
+                    )"
+                    aria-label="Add Fresh Full Cream Milk to cart"
+                >
+                    <i class="bi bi-cart-plus"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ==========================================
+     DEAL PRODUCT 2 — CLASSIC POTATO CHIPS
+========================================== -->
+
+<div class="col-md-6">
+
+    <div class="deal-product-card">
+
+        <!-- Product Image -->
+        <div class="deal-product-image">
+
+            <span class="deal-discount">
+                -25%
+            </span>
+
+            <img
+                src="chips.png"
+                alt="Classic Potato Chips"
+            >
+
+            <!-- Favorite -->
+            <button
+                class="deal-heart"
+                type="button"
+                aria-label="Add to favorites"
+            >
+                <i class="bi bi-heart"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Product Information -->
+        <div class="deal-product-info">
+
+            <span>
+                Snacks
+            </span>
+
+            <h5>
+                Classic Potato Chips
+            </h5>
+
+
+            <!-- Rating -->
+            <div class="deal-stars">
+                ★★★★★
+                <small>(4.4)</small>
+            </div>
+
+
+            <!-- Price + Cart -->
+            <div class="deal-price-row">
+
+                <div>
+                    <strong>$1.49</strong>
+                    <del>$1.99</del>
+                </div>
+
+
+                <!-- ADD TO CART -->
+                <button
+                    class="deal-add-btn"
+                    type="button"
+                    onclick="addToCart(
+                        'Classic Potato Chips',
+                        1.49,
+                        'chips.png'
+                    )"
+                    aria-label="Add Classic Potato Chips to cart"
+                >
+                    <i class="bi bi-cart-plus"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ==========================================
+     DEAL PRODUCT 3 — PREMIUM BASMATI RICE
+========================================== -->
+
+<div class="col-md-6">
+
+    <div class="deal-product-card">
+
+        <!-- Product Image -->
+        <div class="deal-product-image">
+
+            <span class="deal-discount">
+                -20%
+            </span>
+
+            <img
+                src="rice2.png"
+                alt="Premium Basmati Rice"
+            >
+
+            <!-- Favorite -->
+            <button
+                class="deal-heart"
+                type="button"
+                aria-label="Add to favorites"
+            >
+                <i class="bi bi-heart"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Product Information -->
+        <div class="deal-product-info">
+
+            <span>
+                Grocery
+            </span>
+
+            <h5>
+                Premium Basmati Rice
+            </h5>
+
+
+            <!-- Rating -->
+            <div class="deal-stars">
+                ★★★★★
+                <small>(4.6)</small>
+            </div>
+
+
+            <!-- Price + Cart -->
+            <div class="deal-price-row">
+
+                <div>
+                    <strong>$5.99</strong>
+                    <del>$7.49</del>
+                </div>
+
+
+                <!-- ADD TO CART -->
+                <button
+                    class="deal-add-btn"
+                    type="button"
+                    onclick="addToCart(
+                        'Premium Basmati Rice',
+                        5.99,
+                        'rice2.png'
+                    )"
+                    aria-label="Add Premium Basmati Rice to cart"
+                >
+                    <i class="bi bi-cart-plus"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div><!-- ==========================================
+     DEAL PRODUCT 4 — CLASSIC INSTANT COFFEE
+========================================== -->
+
+<div class="col-md-6">
+
+    <div class="deal-product-card">
+
+        <!-- Product Image -->
+        <div class="deal-product-image">
+
+            <span class="deal-discount">
+                -35%
+            </span>
+
+            <img
+                src="cofee.png"
+                alt="Classic Instant Coffee"
+            >
+
+            <!-- Favorite -->
+            <button
+                class="deal-heart"
+                type="button"
+                aria-label="Add to favorites"
+            >
+                <i class="bi bi-heart"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Product Information -->
+        <div class="deal-product-info">
+
+            <span>
+                Beverages
+            </span>
+
+            <h5>
+                Classic Instant Coffee
+            </h5>
+
+
+            <!-- Rating -->
+            <div class="deal-stars">
+                ★★★★★
+                <small>(4.6)</small>
+            </div>
+
+
+            <!-- Price + Cart -->
+            <div class="deal-price-row">
+
+                <div>
+                    <strong>$6.49</strong>
+                    <del>$9.99</del>
+                </div>
+
+
+                <!-- ADD TO CART -->
+                <button
+                    class="deal-add-btn"
+                    type="button"
+                    onclick="addToCart(
+                        'Classic Instant Coffee',
+                        6.49,
+                        'cofee.png'
+                    )"
+                    aria-label="Add Classic Instant Coffee to cart"
+                >
+                    <i class="bi bi-cart-plus"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why-us py-5  scroll-left">
+
+    <div class="container py-lg-5">
+
+        <!-- Heading -->
+        <div class="row align-items-end mb-5">
+
+            <div class="col-lg-7">
+
+                <span class="why-subtitle">
+                    WHY CHOOSE US
+                </span>
+
+                <h2 class="why-title mt-2 mb-0">
+                    We make grocery shopping
+                    <span>simple & better.</span>
+                </h2>
+
+            </div>
+
+            <div class="col-lg-4 ms-auto mt-3 mt-lg-0">
+
+                <p class="why-description mb-0">
+                    Fresh products, reliable delivery and great
+                    prices — everything you need for a better
+                    everyday shopping experience.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Features -->
+        <div class="row g-4">
+
+
+            <!-- Feature 1 -->
+            <div class="col-lg-6">
+
+                <div class="why-feature h-100">
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-sm-4">
+
+                            <div class="why-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-8">
+
+                            <span class="feature-number">
+                                01
+                            </span>
+
+                            <h4>
+                                Fast & Reliable Delivery
+                            </h4>
+
+                            <p>
+                                Get your groceries delivered fresh
+                                and quickly right to your doorstep.
+                            </p>
+
+                            <a href="#">
+                                Learn More
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+            <div class="col-lg-6">
+
+                <div class="why-feature h-100">
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-sm-4">
+
+                           <div class="why-icon">
+    <i class="bi bi-leaf"></i>
+</div>
+                        </div>
+
+                        <div class="col-sm-8">
+
+                            <span class="feature-number">
+                                02
+                            </span>
+
+                            <h4>
+                                Fresh & Quality Products
+                            </h4>
+
+                            <p>
+                                We carefully select products so you
+                                always receive quality you can trust.
+                            </p>
+
+                            <a href="#">
+                                Learn More
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 3 -->
+            <div class="col-lg-6">
+
+                <div class="why-feature h-100">
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-sm-4">
+
+                            <div class="why-icon">
+                                <i class="bi bi-tag"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-8">
+
+                            <span class="feature-number">
+                                03
+                            </span>
+
+                            <h4>
+                                Best Everyday Prices
+                            </h4>
+
+                            <p>
+                                Save more with competitive prices
+                                and exciting daily grocery deals.
+                            </p>
+
+                            <a href="#">
+                                View Deals
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 4 -->
+            <div class="col-lg-6">
+
+                <div class="why-feature h-100">
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-sm-4">
+
+                            <div class="why-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-8">
+
+                            <span class="feature-number">
+                                04
+                            </span>
+
+                            <h4>
+                                Friendly Customer Support
+                            </h4>
+
+                            <p>
+                                Our support team is always ready
+                                to help whenever you need us.
+                            </p>
+
+                            <a href="#">
+                                Contact Us
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</div>
+</section>
+         
+<!-- =========================
+     CUSTOMER REVIEWS
+========================= -->
+
+<section class="customer-review-section py-5 scroll-right">
+
+    <div class="container py-lg-5">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+
+            <span class="review-label">
+                CUSTOMER REVIEWS
+            </span>
+
+            <h2 class="review-heading mt-2">
+                What Our Customers <span>Say</span>
+            </h2>
+
+            <p class="review-subtitle mx-auto">
+                We love hearing from our customers.
+                Here's what they think about FreshCart.
+            </p>
+
+        </div>
+
+
+        <!-- Overall Rating -->
+
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-6">
+
+                <div class="overall-review text-center">
+
+                    <div class="overall-number">
+                        4.9
+                    </div>
+
+                    <div class="overall-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Excellent
+                    </p>
+
+                    <small>
+                        Based on 2,500+ verified customer reviews
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Reviews -->
+
+        <div class="row g-4">
+
+
+            <!-- Review 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="review-card h-100">
+
+                    <div class="review-profile">
+
+                        <div class="review-avatar">
+                            S
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Sarah Williams
+                            </h5>
+
+                            <div class="verified">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified Customer
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+
+                    <p class="review-text">
+                        FreshCart has made my weekly grocery
+                        shopping so much easier. Everything arrives
+                        fresh and the delivery is always on time.
+                    </p>
+
+
+                    <div class="review-date">
+                        2 weeks ago
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Review 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="review-card h-100">
+
+                    <div class="review-profile">
+
+                        <div class="review-avatar">
+                            A
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Alex Johnson
+                            </h5>
+
+                            <div class="verified">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified Customer
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+
+                    <p class="review-text">
+                        Great prices and excellent quality.
+                        I especially love the daily deals.
+                        FreshCart is now my first choice for groceries.
+                    </p>
+
+
+                    <div class="review-date">
+                        1 week ago
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Review 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="review-card h-100">
+
+                    <div class="review-profile">
+
+                        <div class="review-avatar">
+                            M
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Michael Brown
+                            </h5>
+
+                            <div class="verified">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Verified Customer
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+
+                    <p class="review-text">
+                        Very smooth shopping experience.
+                        My order arrived perfectly packed and
+                        much faster than I expected.
+                    </p>
+
+
+                    <div class="review-date">
+                        3 days ago
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+
+        <div class="text-center mt-5">
+
+            <p class="happy-customers">
+                <i class="bi bi-heart-fill"></i>
+                Trusted by thousands of happy customers
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+ <!-- =========================
+     PREMIUM FRESHCART FOOTER
+=========================  -->
+
+<footer class="fc-footer">
+
+    <!-- Newsletter -->
+    <div class="fc-newsletter">
+        <div class="container">
+            <div class="fc-newsletter-box">
+
+                <div class="fc-newsletter-content">
+                    <span class="fc-newsletter-badge">
+                        Fresh Updates
+                    </span>
+
+                    <h2>
+                        Get Fresh Deals <span>Every Week</span>
+                    </h2>
+
+                    <p>
+                        Subscribe to our newsletter and get exclusive
+                        offers, fresh arrivals and special discounts.
+                    </p>
+                </div>
+
+                <form class="fc-newsletter-form">
+                    <div class="fc-input-box">
+                        <span>✉</span>
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Subscribe
+                        <span>→</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="fc-footer-main">
+        <div class="container">
+
+            <div class="fc-footer-grid">
+
+                <!-- Brand -->
+                <div class="fc-footer-brand">
+
+                    <a href="index.html" class="fc-logo">
+                        Green<span>Basket</span>
+                    </a>
+
+                    <p>
+                        Your everyday grocery destination for fresh,
+                        healthy and quality products delivered right
+                        to your doorstep.
+                    </p>
+
+                    <div class="fc-trust">
+                        <div class="fc-trust-icon">✓</div>
+                        <div>
+                            <strong>100% Fresh Products</strong>
+                            <small>Quality you can trust</small>
+                        </div>
+                    </div>
+
+                    <div class="fc-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            𝕏
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            in
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Shop -->
+                <div class="fc-footer-column">
+
+                    <h4>Shop</h4>
+
+                    <a href="shop.html">
+                        All Products
+                    </a>
+
+                    <a href="shop.html#popular-products">
+                        Popular Products
+                    </a>
+
+                    <a href="shop.html#daily-deals">
+                        Daily Deals
+                    </a>
+
+                    <a href="shop.html#vegetables">
+                        Fresh Vegetables
+                    </a>
+
+                    <a href="shop.html#fruits">
+                        Fresh Fruits
+                    </a>
+
+                </div>
+
+
+                <!-- Information -->
+                <div class="fc-footer-column">
+
+                    <h4>Information</h4>
+
+                    <a href="about.html">
+                        About FreshCart
+                    </a>
+
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a href="faq.html">
+                        Frequently Asked Questions
+                    </a>
+
+                    <a href="shipping.html">
+                        Shipping & Delivery
+                    </a>
+
+                    <a href="returns.html">
+                        Returns & Refunds
+                    </a>
+
+                </div>
+
+
+                <!-- Customer -->
+                <div class="fc-footer-column">
+
+                    <h4>Customer Care</h4>
+
+                    <a href="account.html">
+                        My Account
+                    </a>
+
+                    <a href="track-order.html">
+                        Track My Order
+                    </a>
+
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms.html">
+                        Terms & Conditions
+                    </a>
+
+                    <a href="contact.html">
+                        Help Center
+                    </a>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="fc-footer-column fc-contact">
+
+                    <h4>Contact Us</h4>
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <small>Our Location</small>
+                            <p>123 Fresh Street, Your City</p>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📞
+                        </div>
+
+                        <div>
+                            <small>Call Us</small>
+                            <a href="tel:+1234567890">
+                                +1 234 567 890
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <small>Email Us</small>
+                            <a href="mailto:hello@freshcart.com">
+                                hello@freshcart.com
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            🕒
+                        </div>
+
+                        <div>
+                            <small>Opening Hours</small>
+                            <p>Mon - Sun: 8AM - 10PM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="fc-footer-bottom">
+
+        <div class="container">
+
+            <div class="fc-bottom-inner">
+
+                <p>
+                    © 2026
+                    <strong>FreshCart</strong>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="fc-payment">
+
+                    <span>We Accept</span>
+
+                    <div class="fc-payment-card">
+                        VISA
+                    </div>
+
+                    <div class="fc-payment-card">
+                        MC
+                    </div>
+
+                    <div class="fc-payment-card">
+                        Pay
+                    </div>
+
+                    <div class="fc-payment-card">
+                        COD
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="script.js"></script>
+
+<!-- =========================
+     FAVORITE OFFCANVAS
+========================= -->
+
+<div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="favoriteOffcanvas">
+
+    <div class="offcanvas-header">
+
+        <div>
+            <h5 class="offcanvas-title">
+                My Favorites
+            </h5>
+
+            <small id="favoriteItemText">
+                0 items
+            </small>
+        </div>
+
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+
+    <div class="offcanvas-body">
+
+        <div id="favoriteItems"></div>
+
+        <div
+            id="emptyFavorites"
+            class="text-center">
+
+            <i class="bi bi-heart"></i>
+
+            <h6>
+                No favorites yet
+            </h6>
+
+            <p>
+                Save products you love here.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<!-- <script src="js/theme.js"></script> -->
+
+<!-- <script src="js/main.js"></script> -->
+
+
+</body>
+</html>

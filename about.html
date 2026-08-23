@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GreenBasket - About Us</title>
+
+
+    <!-- ==========================================
+         BOOTSTRAP 5.3.3 CSS
+    =========================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==========================================
+         BOOTSTRAP ICONS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+<!-- Navbar CSS -->
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+
+    <!-- ==========================================
+         ABOUT PAGE CSS
+    =========================================== -->
+
+    
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="about.css">
+
+
+</head>
+
+
+<body>
+
+  
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid px-lg-5">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#">
+            <div class="logo-icon">
+                <i class="bi bi-basket2-fill"></i>
+            </div>
+
+            <div>
+                <span>Green<span class="logo-green">Basket</span></span>
+                <small>Fresh & Healthy</small>
+            </div>
+        </a>
+
+
+        <!-- Mobile Toggle -->
+        <button 
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <!-- Links -->
+            <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">Checkout</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Right Side -->
+            <div class="navbar-right">
+
+                <!-- Search -->
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        placeholder="Search for products..."
+                    >
+
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <!-- Icons -->
+                 <div class="header-favorite">
+    <button
+        type="button"
+        class="favorite-header-btn"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#favoriteOffcanvas">
+
+        <i class="bi bi-heart"></i>
+
+        <span id="favoriteCount">0</span>
+    </button>
+</div>
+                
+                <!-- Dark Mode Button -->
+<!-- 
+<button
+    id="themeToggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Toggle dark mode">
+
+    <i class="bi bi-moon-fill"></i>
+
+</button> -->
+
+               <button
+    class="cart-header-btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#cartOffcanvas">
+
+    <i class="bi bi-cart3"></i>
+
+    <span id="cartCount">0</span>
+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- ==========================================
+     ABOUT HERO SECTION
+========================================== -->
+
+<section class="about1-hero">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <!-- ==================================
+                 LEFT CONTENT
+            =================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="about1-content">
+
+
+                    <!-- Label -->
+
+                    <div class="about1-label">
+
+                        <span></span>
+
+                        ABOUT GREENBASKET
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- Heading -->
+
+                    <h1>
+
+                        Freshness You Can
+                        <b>Trust.</b>
+
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p>
+
+                        GreenBasket makes fresh, quality groceries
+                        easier to discover and bring right to your
+                        doorstep.
+
+                    </p>
+
+
+                    <!-- Buttons -->
+
+                    <div class="about1-buttons">
+
+
+                        <a
+                            href="shop.html"
+                            class="about1-primary"
+                        >
+
+                            Explore Our Shop
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="#our-story"
+                            class="about1-secondary"
+                        >
+
+                            Our Story
+
+                            <i class="bi bi-play-circle"></i>
+
+                        </a>
+
+
+                    </div>
+
+
+                    <!-- ==================================
+                         STATS
+                    =================================== -->
+
+                    <div class="about1-stats">
+
+
+                        <div class="about1-stat">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Fresh Quality
+                            </span>
+
+                        </div>
+
+
+                        <div class="about1-stat-line"></div>
+
+
+                        <div class="about1-stat">
+
+                            <strong>
+                                24/7
+                            </strong>
+
+                            <span>
+                                Easy Shopping
+                            </span>
+
+                        </div>
+
+
+                        <div class="about1-stat-line"></div>
+
+
+                        <div class="about1-stat">
+
+                            <strong>
+                                Fast
+                            </strong>
+
+                            <span>
+                                Home Delivery
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================
+                 RIGHT VISUAL
+            =================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="about1-visual">
+
+
+                    <!-- Main Image -->
+
+                    <div class="about1-image">
+
+                        <img
+                            src="basket.png"
+                            alt="Fresh groceries at GreenBasket"
+                        >
+
+                    </div>
+
+
+                    <!-- Fresh Badge -->
+
+                    <div class="about1-badge">
+
+
+                        <div class="about1-badge-icon">
+
+                            <i class="bi bi-leaf-fill"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Naturally Fresh
+                            </strong>
+
+                            <span>
+                                Selected with care
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Floating Card -->
+
+                    <div class="about1-floating">
+
+
+                        <div class="about1-floating-icon">
+
+                            <i class="bi bi-basket2-fill"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Fresh Every Day
+                            </strong>
+
+                            <span>
+                                From basket to doorstep
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Decorative Circle -->
+
+                    <div class="about1-circle"></div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     ABOUT SECTION 2 — OUR STORY
+========================================== -->
+
+<section class="about2-story" id="our-story">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+
+        <div class="about2-heading text-center">
+
+            <span class="about2-eyebrow">
+                OUR STORY
+            </span>
+
+            <h2>
+                From a Simple Idea to
+                <span>Fresh Living.</span>
+            </h2>
+
+            <p>
+                GreenBasket was created with one simple goal:
+                make fresh, quality groceries easier for everyone
+                to access every day.
+            </p>
+
+        </div>
+
+
+        <div class="row align-items-center g-5 mt-2">
+
+
+            <!-- ==================================
+                 LEFT STORY VISUAL
+            =================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="about2-visual">
+
+                    <!-- Large Year -->
+
+                    <div class="about2-year">
+                        2026
+                    </div>
+
+
+                    <!-- Main Story Card -->
+
+                    <div class="about2-story-card">
+
+                        <div class="about2-card-icon">
+
+                            <i class="bi bi-shop"></i>
+
+                        </div>
+
+                        <span>
+                            THE BEGINNING
+                        </span>
+
+                        <h3>
+                            Freshness Started
+                            With a Vision.
+                        </h3>
+
+                        <p>
+                            We wanted to create a grocery
+                            experience where quality, convenience
+                            and trust come together.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Decorative Circle -->
+
+                    <div class="about2-circle about2-circle-one"></div>
+
+                    <div class="about2-circle about2-circle-two"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================
+                 RIGHT CONTENT
+            =================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="about2-content">
+
+
+                    <!-- Story Item 1 -->
+
+                    <div class="about2-item">
+
+                        <div class="about2-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                A Better Grocery Experience
+                            </h4>
+
+                            <p>
+                                We started by focusing on what
+                                shoppers really need — fresh
+                                products, simple browsing and
+                                a smooth shopping experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Story Item 2 -->
+
+                    <div class="about2-item">
+
+                        <div class="about2-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Quality Comes First
+                            </h4>
+
+                            <p>
+                                Every product is selected with
+                                freshness and quality in mind,
+                                because your everyday groceries
+                                deserve better.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Story Item 3 -->
+
+                    <div class="about2-item">
+
+                        <div class="about2-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Built Around You
+                            </h4>
+
+                            <p>
+                                From easy ordering to convenient
+                                delivery, every part of GreenBasket
+                                is designed around the customer.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bottom CTA -->
+
+                    <a
+                        href="shop.html"
+                        class="about2-link"
+                    >
+
+                        Discover GreenBasket
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT SECTION 3 — OUR VALUES
+===================================================== -->
+
+<section class="about3-values">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+
+        <div class="about3-heading">
+
+            <span class="about3-eyebrow">
+                WHY GREENBASKET
+            </span>
+
+            <h2>
+                What Makes Us
+                <span>Different?</span>
+            </h2>
+
+            <p>
+                We believe grocery shopping should be simple,
+                reliable and built around the things that matter
+                most to you.
+            </p>
+
+        </div>
+
+
+        <!-- Values -->
+
+        <div class="row g-4">
+
+
+            <!-- Value 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="about3-card">
+
+                    <div class="about3-card-top">
+
+                        <span class="about3-number">
+                            01
+                        </span>
+
+                        <div class="about3-icon">
+
+                            <i class="bi bi-patch-check-fill"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        Quality You Can Trust
+                    </h3>
+
+
+                    <p>
+                        We focus on bringing quality products
+                        and a reliable shopping experience to
+                        your everyday life.
+                    </p>
+
+
+                    <div class="about3-line"></div>
+
+
+                    <span class="about3-label">
+                        QUALITY FIRST
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Value 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="about3-card">
+
+                    <div class="about3-card-top">
+
+                        <span class="about3-number">
+                            02
+                        </span>
+
+                        <div class="about3-icon">
+
+                            <i class="bi bi-lightning-charge-fill"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        Simple & Convenient
+                    </h3>
+
+
+                    <p>
+                        From discovering groceries to placing
+                        an order, everything is designed to make
+                        shopping easier.
+                    </p>
+
+
+                    <div class="about3-line"></div>
+
+
+                    <span class="about3-label">
+                        EASY SHOPPING
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Value 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="about3-card">
+
+                    <div class="about3-card-top">
+
+                        <span class="about3-number">
+                            03
+                        </span>
+
+                        <div class="about3-icon">
+
+                            <i class="bi bi-heart-fill"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        Customer Comes First
+                    </h3>
+
+
+                    <p>
+                        Every part of GreenBasket is created
+                        with one thing in mind — giving our
+                        customers a better experience.
+                    </p>
+
+
+                    <div class="about3-line"></div>
+
+
+                    <span class="about3-label">
+                        CUSTOMER FIRST
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about4-promise">
+
+    <div class="container">
+
+        <div class="about4-wrapper">
+
+            <div class="about4-main">
+
+                <div class="about4-mark">
+                    <i class="bi bi-flower1"></i>
+                </div>
+
+                <span class="about4-eyebrow">
+                    THE GREENBASKET PROMISE
+                </span>
+
+                <h2>
+                    Better choices.
+                    <span>Better everyday.</span>
+                </h2>
+
+                <p>
+                    We are committed to making everyday grocery
+                    shopping feel simpler, smarter and more dependable.
+                </p>
+
+                <a href="shop.html" class="about4-button">
+                    Explore GreenBasket
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="about4-promises">
+
+                <div class="about4-item">
+
+                    <div class="about4-item-number">01</div>
+
+                    <div class="about4-item-content">
+                        <h3>Thoughtful Selection</h3>
+
+                        <p>
+                            Useful and dependable choices in one
+                            convenient place.
+                        </p>
+                    </div>
+
+                    <i class="bi bi-arrow-up-right about4-arrow"></i>
+
+                </div>
+
+
+                <div class="about4-item">
+
+                    <div class="about4-item-number">02</div>
+
+                    <div class="about4-item-content">
+                        <h3>Simple Experience</h3>
+
+                        <p>
+                            Everything is designed to keep your
+                            shopping journey clear and effortless.
+                        </p>
+                    </div>
+
+                    <i class="bi bi-arrow-up-right about4-arrow"></i>
+
+                </div>
+
+
+                <div class="about4-item">
+
+                    <div class="about4-item-number">03</div>
+
+                    <div class="about4-item-content">
+                        <h3>Reliable Service</h3>
+
+                        <p>
+                            A smooth and dependable experience
+                            from browsing to checkout.
+                        </p>
+                    </div>
+
+                    <i class="bi bi-arrow-up-right about4-arrow"></i>
+
+                </div>
+
+
+                <div class="about4-item">
+
+                    <div class="about4-item-number">04</div>
+
+                    <div class="about4-item-content">
+                        <h3>Customer First</h3>
+
+                        <p>
+                            Your experience remains at the heart
+                            of everything we build.
+                        </p>
+                    </div>
+
+                    <i class="bi bi-arrow-up-right about4-arrow"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     PREMIUM FRESHCART FOOTER
+=========================  -->
+
+<footer class="fc-footer">
+
+    <!-- Newsletter -->
+    <div class="fc-newsletter">
+        <div class="container">
+            <div class="fc-newsletter-box">
+
+                <div class="fc-newsletter-content">
+                    <span class="fc-newsletter-badge">
+                        Fresh Updates
+                    </span>
+
+                    <h2>
+                        Get Fresh Deals <span>Every Week</span>
+                    </h2>
+
+                    <p>
+                        Subscribe to our newsletter and get exclusive
+                        offers, fresh arrivals and special discounts.
+                    </p>
+                </div>
+
+                <form class="fc-newsletter-form">
+                    <div class="fc-input-box">
+                        <span>✉</span>
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Subscribe
+                        <span>→</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="fc-footer-main">
+        <div class="container">
+
+            <div class="fc-footer-grid">
+
+                <!-- Brand -->
+                <div class="fc-footer-brand">
+
+                    <a href="index.html" class="fc-logo">
+                        Green<span>Basket</span>
+                    </a>
+
+                    <p>
+                        Your everyday grocery destination for fresh,
+                        healthy and quality products delivered right
+                        to your doorstep.
+                    </p>
+
+                    <div class="fc-trust">
+                        <div class="fc-trust-icon">✓</div>
+                        <div>
+                            <strong>100% Fresh Products</strong>
+                            <small>Quality you can trust</small>
+                        </div>
+                    </div>
+
+                    <div class="fc-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            𝕏
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            in
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Shop -->
+                <div class="fc-footer-column">
+
+                    <h4>Shop</h4>
+
+                    <a href="shop.html">
+                        All Products
+                    </a>
+
+                    <a href="shop.html#popular-products">
+                        Popular Products
+                    </a>
+
+                    <a href="shop.html#daily-deals">
+                        Daily Deals
+                    </a>
+
+                    <a href="shop.html#vegetables">
+                        Fresh Vegetables
+                    </a>
+
+                    <a href="shop.html#fruits">
+                        Fresh Fruits
+                    </a>
+
+                </div>
+
+
+                <!-- Information -->
+                <div class="fc-footer-column">
+
+                    <h4>Information</h4>
+
+                    <a href="about.html">
+                        About FreshCart
+                    </a>
+
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a href="faq.html">
+                        Frequently Asked Questions
+                    </a>
+
+                    <a href="shipping.html">
+                        Shipping & Delivery
+                    </a>
+
+                    <a href="returns.html">
+                        Returns & Refunds
+                    </a>
+
+                </div>
+
+
+                <!-- Customer -->
+                <div class="fc-footer-column">
+
+                    <h4>Customer Care</h4>
+
+                    <a href="account.html">
+                        My Account
+                    </a>
+
+                    <a href="track-order.html">
+                        Track My Order
+                    </a>
+
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms.html">
+                        Terms & Conditions
+                    </a>
+
+                    <a href="contact.html">
+                        Help Center
+                    </a>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="fc-footer-column fc-contact">
+
+                    <h4>Contact Us</h4>
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <small>Our Location</small>
+                            <p>123 Fresh Street, Your City</p>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            📞
+                        </div>
+
+                        <div>
+                            <small>Call Us</small>
+                            <a href="tel:+1234567890">
+                                +1 234 567 890
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <small>Email Us</small>
+                            <a href="mailto:hello@freshcart.com">
+                                hello@freshcart.com
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="fc-contact-item">
+                        <div class="fc-contact-icon">
+                            🕒
+                        </div>
+
+                        <div>
+                            <small>Opening Hours</small>
+                            <p>Mon - Sun: 8AM - 10PM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="fc-footer-bottom">
+
+        <div class="container">
+
+            <div class="fc-bottom-inner">
+
+                <p>
+                    © 2026
+                    <strong>FreshCart</strong>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="fc-payment">
+
+                    <span>We Accept</span>
+
+                    <div class="fc-payment-card">
+                        VISA
+                    </div>
+
+                    <div class="fc-payment-card">
+                        MC
+                    </div>
+
+                    <div class="fc-payment-card">
+                        Pay
+                    </div>
+
+                    <div class="fc-payment-card">
+                        COD
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<!-- ==========================================
+     BOOTSTRAP JS
+========================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="about.js"></script>
+</body>
+
+</html>
